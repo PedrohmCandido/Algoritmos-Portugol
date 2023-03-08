@@ -1,10 +1,12 @@
 programa
 {
-	inclua biblioteca Matematica --> mat
+	inclua biblioteca Matematica
+ --> mat
 	
 	funcao inicio()
 	{
-		real salarioB, vendas, valorC, salarioF
+		real salarioB, valorC, salarioF
+		inteiro vendas
 		cadeia nome
 		
 		escreva("Digite a seguir o nome do vendedor(a): ")
