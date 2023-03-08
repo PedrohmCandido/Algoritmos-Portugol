@@ -4,7 +4,8 @@ programa
 	
 	funcao inicio()
 	{
-		real valorA, valorB, valorC, x1, x2, delta
+		real x1, x2,
+		inteiro valorA, valorB, valorC, delta
 		
 		escreva("Digite o numéro da incógnita A: ")
 		leia(valorA)
@@ -12,9 +13,9 @@ programa
 		leia(valorB)
 		escreva("Digite o numéro da incógnita C: ")
 		leia(valorC)
-		delta = mat.potencia(valorB, 2.0) - 4 * valorA * valorC
-		x1 = (- valorB + mat.raiz(delta, 2.0)) / 2 * valorA
-		x2 = (- valorB - mat.raiz(delta, 2.0)) / 2 * valorA
+		delta = mat.potencia(valorB, 2) - 4 * valorA * valorC
+		x1 = (- valorB + mat.raiz(delta, 2)) / (2 * valorA)
+		x2 = (- valorB - mat.raiz(delta, 2)) / (2 * valorA)
 		escreva("As raízes da equação: ", valorA, "x² + ", valorB, "x + ", valorC, " são: ", x1, " e ", x2) 
 		escreva("\nAs raízes arredondadas da equação: ", valorA, "x² + ", valorB, "x + ", valorC, " são: ", mat.arredondar(x1, 2), " e ", mat.arredondar(x2, 2))
 		
